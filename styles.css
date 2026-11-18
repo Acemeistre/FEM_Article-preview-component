@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /*colors*/
+    --color-grey-900: #48556A;
+    --color-grey-500: #6E9098;
+    --color-grey-400: #9DAEC2;
+    --color-grey-200: #ECF2F8;
+
+    /*spacing*/
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2rem;
+    --spacing-500: 2.5rem;
+    --spacing-600: 3rem;
+    --spacing-700: 3.5rem;
+    --spacing-800: 4rem;
+    --spacing-1300: 6.5rem;
+    --spacing-2000: 10rem;
+}
+
