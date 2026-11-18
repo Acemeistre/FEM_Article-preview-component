@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="styles.css" rel="stylesheet" type="text/css">
-  <scipt src="index.js" defer></scipt>
+  <script src="index.js" defer></script>
   <title>Frontend Mentor | Article preview component</title>
 
 </head>
+
 <body>
-
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
+  <main>
+    <div class="container">
+      <div class="image-container">
+        <img src="images/drawers.jpg" alt="a set of drawers,
+        set against exposed white brick wall with decorative picture frames and vase on top" />
+      </div>
+      <article>
+        <h1 class="intro-text"> Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home</h1>
+        <p class="text">
+          Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.
+        </p>
+        <div class="share-bar">
+          <div class="author">
+            <img src="images/avatar-michelle.jpg" alt="" />
+            <p class="name">Michelle Appleton</p>
+            <time datetime="2020-06-28">28 Jun 2020</time>
+          </div>
+          <div class="social-media" id="link">
+            <p class="share">share</p>
+            <img src="images/icon-facebook.svg" alt="" />
+            <img src="images/icon-twitter.svg" alt="" />
+            <img src="images/icon-pinterest.svg" alt="" />
+          </div>
+          <button class="share-links" aria-label="view social media links" aria-expanded="false" aria-controls="link">
+            <img src="images/icon-share.svg" alt="" />
+          </button>
+        </div>
+      </article>
+    </div>
+  </main>
 </body>
+
 </html>
