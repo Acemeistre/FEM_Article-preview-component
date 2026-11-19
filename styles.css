@@ -61,6 +61,21 @@ article {
 
 .text {
     color: var(--color-grey-500);
-    font-size: 0.85rem;
     text-align: left;
+    font-weight: 500;
+}
+
+.name {
+    color: var(--color-grey-900);
+    font-weight: 800;
+}
+
+time {
+    color: var(--color-grey-400);
+}
+
+.text,
+.name,
+time {
+    font-size: 0.85rem;
 }
