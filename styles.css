@@ -67,6 +67,10 @@ article {
     padding: var(--spacing-200) 0 var(--spacing-400);
 }
 
+.share-bar {
+    position: relative;
+}
+
 .author {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -100,6 +104,17 @@ time {
 }
 
 .social-media {
-    display: flex;
+    display: none;
     background-color: var(--color-grey-900);
+}
+
+button {
+    position: absolute;
+    display: block;
+    justify-self: right;
+    align-self: center;
+    transform: translateY(-50%);
+    border: none;
+    padding: .75rem;
+    border-radius: 100%;
 }
