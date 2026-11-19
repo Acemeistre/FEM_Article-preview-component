@@ -63,11 +63,30 @@ article {
     color: var(--color-grey-500);
     text-align: left;
     font-weight: 500;
+    margin: 0;
+    padding: var(--spacing-200) 0 var(--spacing-400);
+}
+
+.author {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 0;
+    padding: var(--spacing-200) 0 0;
+    align-items: center;
+    column-gap: var(--spacing-200);
+}
+
+.author img {
+    width: var(--spacing-500);
+    height: auto;
+    border-radius: 50%;
+    grid-row: span 2;
 }
 
 .name {
     color: var(--color-grey-900);
     font-weight: 800;
+    margin: 0;
 }
 
 time {
@@ -78,4 +97,9 @@ time {
 .name,
 time {
     font-size: 0.85rem;
+}
+
+.social-media {
+    display: flex;
+    background-color: var(--color-grey-900);
 }
