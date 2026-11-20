@@ -44,7 +44,10 @@ main {
 
 .image-container img {
     width: 100%;
+    height: 13rem;
     border-radius: var(--spacing-200) var(--spacing-200) 0 0;
+    object-fit: cover;
+    object-position: 0% 25%;
 }
 
 article {
@@ -109,7 +112,7 @@ time {
     background-color: var(--color-grey-900);
     align-items: center;
     margin: 0;
-    gap: 1rem;
+    gap: var(--spacing-200);
     transform: translateY(-140%);
 }
 
@@ -129,18 +132,14 @@ time {
 
 .share-bar:has(.share-btn[aria-expanded="true"]) {
     background-color: var(--color-grey-900);
-    min-height: 4rem;
-    margin: -1.5rem;
+    min-height: var(--spacing-800);
+    margin: 0 -1.5rem -1.5rem;
     border-radius: 0 0 1rem 1rem;
    
 }
 
 .share-btn[aria-expanded="true"] {
     transform: translate(-120%, -70%)
-}
-
-.share-btn[aria-expanded="true"] .text {
-    margin-bottom: 5rem;
 }
 
 .share-bar:has(.share-btn[aria-expanded="false"]) .social-media {
@@ -155,7 +154,7 @@ time {
     display: flex;
     background-color: var(--color-grey-900);
     align-items: center;
-    padding: 0 1.5rem;
+    padding: 0 var(--spacing-300);
     gap: 1rem;
     transform: translateY(130%);
 }
